@@ -2,7 +2,7 @@ docker run hello-world
 docker images -> Muestra las imagenes
 docker pull ubuntu -> Instala una imagen
 docker run ubuntu echo "hello world"
-docker run -it ubuntu bash -> Ejecuta el bash de ubuntu de una manera iterativa, es decir, que no se cierra de golpe
+docker run -it id-contenedor bash -> Ejecuta el bash de ubuntu de una manera iterativa, es decir, que no se cierra de golpe
 ctrl + d -> Salir de la ejecucición
 docker ps -> Muestra la ejecucion de la imagen que hemos instalado, es decir, podemos ejecutar una imagen varias veces y cada una tendra un ID
 docker ps -a -> Historial de ejecuciones
@@ -28,6 +28,11 @@ docker run -d -p 80:80 --name website -v c/Users/Admin/Documents/Programacion/Do
 docker exec -it website bash
 docker build -t migueltest .
 
+UBUNTU
+docker pull ubuntu -> Instala una imagen
+docker run ubuntu echo "hello world"
+docker run -it id-contenedor bash -> Ejecuta el bash
+docker cp origen/arhivo destino -> docker cp b0693903e303:/home/docker/juniperfeats.png C:\Users\Miguel\Documents\UMB
 
 REDIS
 docker pull redis
