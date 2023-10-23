@@ -49,3 +49,13 @@ POSTGRESQL
 docker pull postgres
 docker run --name postgresdb -d -p 5432:5432 -e POSTGRES_PASSWORD=testing postgres
 docker exec -it id-contenedor psql -U postgres
+
+DOCKERIZAR SPRING BOOT APP
+https://www.baeldung.com/dockerizing-spring-boot-application
+https://medium.com/swlh/spring-boot-with-docker-2467db187fa2
+Construir el Dockerfile
+mvn clean install
+docker build -t nombre-de-la-imagen .
+docker run --name nombre-del-contenedor -p 8080:8080 -d nombre-de-la-imagen
+docker network connect nombre-de-la-red nombre-del-contenedor
+docker logs nombre-del-contenedor
