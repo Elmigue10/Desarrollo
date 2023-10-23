@@ -47,7 +47,7 @@ taskkill /F /PID numero-proceso
 
 POSTGRESQL
 docker pull postgres
-docker run --name postgresdb -d -p 5432:5432 -e POSTGRES_PASSWORD=testing postgres
+docker run --name postgresdb -d -p 5432:5432 -e POSTGRES_PASSWORD=admin postgres
 docker exec -it id-contenedor psql -U postgres
 
 DOCKERIZAR SPRING BOOT APP
